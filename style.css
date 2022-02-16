@@ -1,0 +1,32 @@
+.form_header{
+    display: flex;
+    justify-content: space-between;
+}
+.form_container{
+    width: 350px;
+    padding: 12px;
+    border: 2px #d1d3d6;
+    border-radius: 8px;
+    font-size: 1.5em;
+    font-weight: 800;
+    z-index: 10;
+    background-color: bisque;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: fixed;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+.active{
+    opacity: 1;
+    pointer-events: auto;
+}
