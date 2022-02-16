@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="popup_btn">open</button>
+  <div class="box">
+  <div class="form_container">
+    <div class="form_header">
+      <h1>Book details</h1>
+    <div> 
+      <button id="close_form">X</button>
+    </div>
+  </div>
+    <div>
+      <form action="script.js" method="GET">
+        <input type="text" id="title" name="title" placeholder="Title">
+        <br>
+        <input type="text" id="auhtor" name="author" placeholder="Auhtor">
+        <br>
+        <input type="number" id="no_of_pages" name="no_of_pages" placeholder="Number of pages">
+        <br>
+        <div id = 'is_read'>
+        <label for="is_read">Have you read it ?</label>
+        <br>
+        <input type="radio" id="yes" name="status" value="yes">
+        <label for="yes">Yes</label>
+        <br>
+        <input type="radio" id="no" name="status" value="no">
+        <label for="no">No</label>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
