@@ -1,3 +1,12 @@
+#header{
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 1.8em;
+    background: #42a5a0;
+    padding: 10px;
+    color: white;
+}
 .form_header{
     display: flex;
     justify-content: space-between;
@@ -29,4 +38,50 @@
 .active{
     opacity: 1;
     pointer-events: auto;
+}
+#popup_btn{
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin: 15px 10px;
+}
+
+  /* book container */
+
+.bookContainer {
+  padding: 50px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e6eaff;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.3em;
+  font-weight: 800;
+  background: #f5f5f5;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.card button {
+  font-weight: 900;
+  padding: 5px 16px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.card .remove {
+  color: white;
+  margin-left: 5px;
+  background: #fc1758;
+}
+.error {
+  color: red;
+  font-size: 0.7em;
 }
