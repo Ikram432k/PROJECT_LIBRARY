@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <button id="popup_btn">open</button>
+  <div id="header">
+    <h1>LIBRARY</h1>
+    <h4>Click "ADD" button to add details of the new book to the library</h4>
+  </div>
+  <button id="popup_btn">ADD</button>
+  <div class="bookContainer"></div>
+
   <div class="box">
   <div class="form_container">
     <div class="form_header">
@@ -18,13 +24,12 @@
     </div>
   </div>
     <div>
-      <form action="script.js" method="GET">
+      <form id="form" action="script.js" method="GET">
         <input type="text" id="title" name="title" placeholder="Title">
         <br>
         <input type="text" id="auhtor" name="author" placeholder="Auhtor">
         <br>
-        <input type="number" id="no_of_pages" name="no_of_pages" placeholder="Number of pages">
-        <br>
+
         <div id = 'is_read'>
         <label for="is_read">Have you read it ?</label>
         <br>
@@ -34,10 +39,16 @@
         <input type="radio" id="no" name="status" value="no">
         <label for="no">No</label>
       </div>
+      <div>
+        <button id="submit" type="submit">SUBMIT</button>
+      </div>
       </form>
     </div>
-  </div>
+
 </div>
+
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
