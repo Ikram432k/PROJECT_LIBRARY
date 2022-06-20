@@ -1,4 +1,4 @@
-const popup = document.getElementById('popup_btn');
+ const popup = document.getElementById('popup_btn');
 const overlay = document.querySelector('.box');
 const closeform = document.getElementById('close_form');
 const submit_btn = document.getElementById('submit');
@@ -29,7 +29,7 @@ let status;
   }
   let newbook = new Book (title,auhtor,status);
   myLibrary.push(newbook);
-
+  console.log(myLibrary);
   update(); 
   form.reset();
   close_popup();
@@ -58,10 +58,10 @@ function update() {
       if (j === 'status') {
         if (myLibrary[i][j] === 'yes') {
           toggleButton.textContent = 'Read';
-          toggleButton.style.background = '#6bf250';
+          // toggleButton.style.background = '#328284';
         } else {
           toggleButton.textContent = 'Not Read';
-          toggleButton.style.background = '#f76d3b';
+          // toggleButton.style.background = '#328284';
         }
         divCard.append(toggleButton);
         divCard.append(removeButton);
@@ -78,10 +78,10 @@ function update() {
   function toggle(b) {
     if (b.textContent === 'Read') {
       b.textContent = 'Not Read';
-      b.style.background = '#f76d3b';
+      // b.style.background = '#328284';
     } else {
       b.textContent = 'Read';
-      b.style.background = '#6bf250';
+      // b.style.background = '#328284';
     }
   }
 
